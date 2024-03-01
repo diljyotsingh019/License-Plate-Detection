@@ -1,0 +1,57 @@
+<!-- 
+NAME @: Diljyot Singh
+TOPIC @: License Plate Recognition and Detection
+DATE @: 04/01/2024
+-->
+
+  
+  <!-----------------------------  BASE SECTION  ----------------------------------->
+
+  {% extends "base.html"%}
+
+  <!-------------------------------------------------------------------------------->
+
+{% block content %}
+
+  <!---------------------------  HOME BODY SECTION   ------------------------------>
+
+<!-- Add a background color and large text to the whole page -->
+<body>
+    <h2 align = "center"><b>ABOUT THE PROJECT</b></h2><br>
+    
+    <p>License Plate Recognition is an advanced machine
+        vision technology used to identify vehicles by their number
+        plates without direct human intervention. This development
+        of Intelligent Transportation System provides the data of
+        vehicle numbers which can be used in follow up, analyses
+        and monitoring. Besides traffic monitoring this technology is
+        gaining popularity in various applications day by day, such
+        as, highway toll collection, border and custom checkpoints,
+        parking access control system</p>
+    
+    
+      <!-----------------------------  FORM SECTIOIN  ----------------------------------->
+      
+    
+      <!----------------------------------------------------------------------------->
+    <div style = "background-color: white; border: 5px solid;">
+    <h3 align = "center">Input Image</h3>
+    </div>
+    <br>
+    <div align = "center">
+    <img src = "{{input_path}}" height="250px"></div>
+    <br>
+    <div style = "background-color: white; border: 5px solid;">
+    <h3 align = "center">License Plate Detection</h3>
+    </div>
+    <br>
+    <div align ="center">
+    <img src = "{{output_path}}" height = "250px">
+    </div>
+    <br>
+    
+    </body>
+
+{% endblock %}
+
+  <!-----------------------------  THE END  ----------------------------------->

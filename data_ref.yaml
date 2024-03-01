@@ -1,0 +1,6 @@
+train: /content/drive/MyDrive/Deep Learning/License Plate/datasets/train
+val: /content/drive/MyDrive/Deep Learning/License Plate/datasets/val
+
+nc: 1
+
+names : ["license_plate"]

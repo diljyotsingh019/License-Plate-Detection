@@ -1,0 +1,58 @@
+<!-- 
+NAME @: Diljyot Singh
+TOPIC @: License Plate Recognition and Detection
+DATE @: 04/01/2024
+-->
+
+  
+  <!-----------------------------  BASE SECTION  ----------------------------------->
+
+  {% extends "base.html"%}
+
+  <!-------------------------------------------------------------------------------->
+
+{% block content %}
+
+
+  <!---------------------------  HOME BODY SECTION   ------------------------------>
+
+<!-- Add a background color and large text to the whole page -->
+<body>
+<h2 align = "center"><b>ABOUT THE PROJECT</b></h2><br>
+
+<p>License Plate Recognition is an advanced machine
+  vision technology used to identify vehicles by their number
+  plates without direct human intervention. This development
+  of Intelligent Transportation System provides the data of
+  vehicle numbers which can be used in follow up, analyses
+  and monitoring. Besides traffic monitoring this technology is
+  gaining popularity in various applications day by day, such
+  as, highway toll collection, border and custom checkpoints,
+  parking access control system</p>
+
+
+  <!-----------------------------  FORM SECTIOIN  ----------------------------------->
+  
+
+  <!----------------------------------------------------------------------------->
+<div style = "background-color: white; border: 5px solid;">
+  <h2>UPLOAD ONE</h2>
+<form align = "center" method="POST" enctype="multipart/form-data">
+    <br> 
+    <label for = "image">Upload Image:</label>
+    <input type = "file" id ="image" accept="image/*" name = "upload_image"><br><br>
+
+    <label for = "video">Upload Video:</label>
+    <input type = "file" id ="video" accept="video/*" name = "upload_video"><br><br>
+
+    <input type = "reset" style = "background-color: black; color: white;">
+    <input type = "submit" Value = "Detect" style = "background-color: black; color: white;">
+</form>
+<br>
+</div>
+
+</body>
+
+{% endblock %}
+
+  <!-----------------------------  THE END  ----------------------------------->
